@@ -1,0 +1,25 @@
+{
+  "servers": {
+    "fabric-lakehouse": {
+      "command": "fabric-lakehouse",
+      "args": [],
+      "env": {
+        "FABRIC_SQL_ENDPOINT": "${input:FABRIC_SQL_ENDPOINT}",
+        "FABRIC_LAKEHOUSE_NAME": "${input:FABRIC_LAKEHOUSE_NAME}"
+      },
+      "type": "stdio"
+    }
+  },
+  "inputs": [
+    {
+      "id": "FABRIC_SQL_ENDPOINT",
+      "type": "promptString",
+      "description": "Enter the SQL endpoint for your Fabric lakehouse (e.g., workspace.datawarehouse.fabric.microsoft.com)"
+    },
+    {
+      "id": "FABRIC_LAKEHOUSE_NAME",
+      "type": "promptString",
+      "description": "Enter the name of your Fabric lakehouse (case-sensitive)"
+    }
+  ]
+}

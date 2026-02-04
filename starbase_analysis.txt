@@ -1,0 +1,293 @@
+====================================================================================================
+STARBASE LAKEHOUSE - DATA OVERVIEW
+====================================================================================================
+
+1. SCHEMA OVERVIEW
+----------------------------------------------------------------------------------------------------
+
+Total Schemas: 9
+Total Tables: 119
+Total Rows: 0
+
+[AIR                      ] |  16 tables |               0 rows
+[CICD                     ] |   2 tables |               0 rows
+[Common                   ] |  44 tables |               0 rows
+[DT                       ] |   3 tables |               0 rows
+[FC                       ] |   7 tables |               0 rows
+[FW                       ] |  15 tables |               0 rows
+[ICM                      ] |  20 tables |               0 rows
+[OOS                      ] |   3 tables |               0 rows
+[SafetyIncidents          ] |   9 tables |               0 rows
+
+
+2. DETAILED TABLE BREAKDOWN BY SCHEMA
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+Schema: AIR
+====================================================================================================
+
+16 tables:
+
+  [CADDataForCustomers                     ] |            0 rows |  24 cols | EMPTY 
+  [CADHistory                              ] |            0 rows |  22 cols | EMPTY 
+  [DimContainerId                          ] |            0 rows |   2 cols | EMPTY 
+  [DimCustomer                             ] |            0 rows |   3 cols | EMPTY 
+  [DimHwBucket                             ] |            0 rows |   2 cols | EMPTY 
+  [DimIsAFPDFlag                           ] |            0 rows |   2 cols | EMPTY 
+  [DimIsAirNotified                        ] |            0 rows |   2 cols | EMPTY 
+  [DimIsDualTOR                            ] |            0 rows |   2 cols | EMPTY 
+  [DimIsOverlake                           ] |            0 rows |   2 cols | EMPTY 
+  [DimRCALevel2                            ] |            0 rows |   2 cols | EMPTY 
+  [DimSpecialtySKU                         ] |            0 rows |   4 cols | EMPTY 
+  [BridgeRCALevel2                         ] |            0 rows |   4 cols | EMPTY 
+  [VMADataForCustomers                     ] |            0 rows |  33 cols | EMPTY 
+  [VMAHistory                              ] |            0 rows |  33 cols | EMPTY 
+  [CADCurrent                              ] |            0 rows |  36 cols | EMPTY 
+  [VMACurrent                              ] |            0 rows |  48 cols | EMPTY 
+
+====================================================================================================
+Schema: CICD
+====================================================================================================
+
+2 tables:
+
+  [AzureCSI_FWRecipevalidation_BuildTestRuns] |            0 rows |  22 cols | EMPTY 
+  [CICDBuildTestRunsSummary                ] |            0 rows |  22 cols | EMPTY 
+
+====================================================================================================
+Schema: Common
+====================================================================================================
+
+44 tables:
+
+  [DimFwFreshnessSkuSeries                 ] |            0 rows |   2 cols | EMPTY 
+  [DimGPU                                  ] |            0 rows |   4 cols | EMPTY 
+  [DimGeneration                           ] |            0 rows |   4 cols | EMPTY 
+  [DimHwSKU                                ] |            0 rows |  10 cols | EMPTY 
+  [DimIntentIsSellable                     ] |            0 rows |   2 cols | EMPTY 
+  [DimIsActiveStorageNode                  ] |            0 rows |   2 cols | EMPTY 
+  [DimIsEmptyNode                          ] |            0 rows |   2 cols | EMPTY 
+  [DimNodeAge                              ] |            0 rows |   2 cols | EMPTY 
+  [DimNodeDCMState                         ] |            0 rows |   2 cols | EMPTY 
+  [DimNodeInventoryCurrent                 ] |            0 rows |  51 cols | EMPTY 
+  [DimNodeInventoryHistory                 ] |            0 rows |  30 cols | EMPTY 
+  [DimNodeState                            ] |            0 rows |   4 cols | EMPTY 
+  [DimNodeStatus                           ] |            0 rows |   2 cols | EMPTY 
+  [DimNodeTitanState                       ] |            0 rows |   2 cols | EMPTY 
+  [DimOOS                                  ] |            0 rows |   2 cols | EMPTY 
+  [DimOOSCompute                           ] |            0 rows |   2 cols | EMPTY 
+  [DimOOSStorage                           ] |            0 rows |   2 cols | EMPTY 
+  [DimOpsModel                             ] |            0 rows |   2 cols | EMPTY 
+  [DimPlanIntentName                       ] |            0 rows |   2 cols | EMPTY 
+  [DimRTO                                  ] |            0 rows |   2 cols | EMPTY 
+  [DimRack                                 ] |            0 rows |   4 cols | EMPTY 
+  [DimRackLocation                         ] |            0 rows |   2 cols | EMPTY 
+  [DimRackSku                              ] |            0 rows |   2 cols | EMPTY 
+  [DimRegion                               ] |            0 rows |   2 cols | EMPTY 
+  [DimSupplier                             ] |            0 rows |   2 cols | EMPTY 
+  [LookupFwFreshnessSLA                    ] |            0 rows |   2 cols | EMPTY 
+  [LookupFwFreshnessScenario               ] |            0 rows |   2 cols | EMPTY 
+  [ReportFooter                            ] |            0 rows |   3 cols | EMPTY 
+  [ReportStyle                             ] |            0 rows |   1 cols | EMPTY 
+  [DimBuildingBlock                        ] |            0 rows |   2 cols | EMPTY 
+  [DimCPU                                  ] |            0 rows |   4 cols | EMPTY 
+  [DimCloud                                ] |            0 rows |   2 cols | EMPTY 
+  [DimCluster                              ] |            0 rows |  78 cols | EMPTY 
+  [DimClusterType                          ] |            0 rows |   2 cols | EMPTY 
+  [DimComponentCategory                    ] |            0 rows |   2 cols | EMPTY 
+  [DimCpuCode                              ] |            0 rows |   4 cols | EMPTY 
+  [DimDataCenter                           ] |            0 rows |   2 cols | EMPTY 
+  [DimDate                                 ] |            0 rows |  41 cols | EMPTY 
+  [DimDecomForecast                        ] |            0 rows |   3 cols | EMPTY 
+  [DimDecomState                           ] |            0 rows |   2 cols | EMPTY 
+  [DimDeviceType                           ] |            0 rows |   2 cols | EMPTY 
+  [DimEngineeringGroup                     ] |            0 rows |   4 cols | EMPTY 
+  [DimFaultCode                            ] |            0 rows |  30 cols | EMPTY 
+  [DimFaultCodeHistory                     ] |            0 rows |  23 cols | EMPTY 
+
+====================================================================================================
+Schema: DT
+====================================================================================================
+
+3 tables:
+
+  [DecomTrend                              ] |            0 rows |  15 cols | EMPTY 
+  [DigitalTwinCurrent                      ] |            0 rows |  53 cols | EMPTY 
+  [DigitalTwinSummary                      ] |            0 rows |  53 cols | EMPTY 
+
+====================================================================================================
+Schema: FC
+====================================================================================================
+
+7 tables:
+
+  [DimFaultCodeSMEOrgTree                  ] |            0 rows |  22 cols | EMPTY 
+  [FaultCodeCurrent                        ] |            0 rows |  50 cols | EMPTY 
+  [FaultCodeEpicHierarchy                  ] |            0 rows |  14 cols | EMPTY 
+  [FaultCodePrecision                      ] |            0 rows |  49 cols | EMPTY 
+  [FaultCodePrecisionHistory               ] |            0 rows |  49 cols | EMPTY 
+  [FaultCodeEfficacy                       ] |            0 rows |  40 cols | EMPTY 
+  [FaultCodeEfficacyHistory                ] |            0 rows |  44 cols | EMPTY 
+
+====================================================================================================
+Schema: FW
+====================================================================================================
+
+15 tables:
+
+  [DataPlaneFreshnessCurrent               ] |            0 rows |  45 cols | EMPTY 
+  [DataPlaneFreshnessSummary               ] |            0 rows |  55 cols | EMPTY 
+  [DeploymentSecurityVulnerabilityTracker  ] |            0 rows |  24 cols | EMPTY 
+  [AllVulnerabilitiesTracker               ] |            0 rows |  13 cols | EMPTY 
+  [SecuritySupplierTracker                 ] |            0 rows |  10 cols | EMPTY 
+  [SecurityVulnerabilitySLACriteria        ] |            0 rows |   9 cols | EMPTY 
+  [ControlPlaneFreshnessCurrent            ] |            0 rows |  46 cols | EMPTY 
+  [ControlPlaneFreshnessSummary            ] |            0 rows |  53 cols | EMPTY 
+  [DimVulnerability                        ] |            0 rows |  23 cols | EMPTY 
+  [DrivesFreshnessCurrent                  ] |            0 rows |  45 cols | EMPTY 
+  [DrivesFreshnessSummary                  ] |            0 rows |  45 cols | EMPTY 
+  [SecuritySLALifecycleTracker             ] |            0 rows |  21 cols | EMPTY 
+  [SecuritySupplierCoverage                ] |            0 rows |   2 cols | EMPTY 
+  [DeploymentSecurityFeatures              ] |            0 rows |  41 cols | EMPTY 
+  [DeploymentSecurityFeaturesSummary       ] |            0 rows |  43 cols | EMPTY 
+
+====================================================================================================
+Schema: ICM
+====================================================================================================
+
+20 tables:
+
+  [DimICMBucket                            ] |            0 rows |   2 cols | EMPTY 
+  [DimICMEnvironment                       ] |            0 rows |   2 cols | EMPTY 
+  [DimICMFaultCode                         ] |            0 rows |   2 cols | EMPTY 
+  [DimICMRemediationType                   ] |            0 rows |   2 cols | EMPTY 
+  [DimICMSCHIELT                           ] |            0 rows |   7 cols | EMPTY 
+  [DimICMSCHIELTOrg                        ] |            0 rows |   2 cols | EMPTY 
+  [DimICMSCHIEOrg                          ] |            0 rows |   7 cols | EMPTY 
+  [DimICMSME                               ] |            0 rows |  12 cols | EMPTY 
+  [DimICMSMETeam                           ] |            0 rows |  17 cols | EMPTY 
+  [DimICMSeverity                          ] |            0 rows |   2 cols | EMPTY 
+  [DimICMState                             ] |            0 rows |   2 cols | EMPTY 
+  [DimICMTenant                            ] |            0 rows |   6 cols | EMPTY 
+  [DimICMTimeToAckSLA                      ] |            0 rows |   2 cols | EMPTY 
+  [DimICMTimeToUpdateSLA                   ] |            0 rows |   2 cols | EMPTY 
+  [DimIsICMParent                          ] |            0 rows |   2 cols | EMPTY 
+  [DimIsICMPurged                          ] |            0 rows |   2 cols | EMPTY 
+  [IncidentTrend                           ] |            0 rows |  21 cols | EMPTY 
+  [IncidentHistory                         ] |            0 rows |  33 cols | EMPTY 
+  [IncidentSnapshot                        ] |            0 rows |  35 cols | EMPTY 
+  [IncidentSnapshotHistory                 ] |            0 rows |  35 cols | EMPTY 
+
+====================================================================================================
+Schema: OOS
+====================================================================================================
+
+3 tables:
+
+  [OOSCurrent                              ] |            0 rows |  50 cols | EMPTY 
+  [OOSSummary                              ] |            0 rows |  50 cols | EMPTY 
+  [XPFTenantsOfflineCapacity               ] |            0 rows |  21 cols | EMPTY 
+
+====================================================================================================
+Schema: SafetyIncidents
+====================================================================================================
+
+9 tables:
+
+  [DimEventInjury                          ] |            0 rows |   2 cols | EMPTY 
+  [DimEventType                            ] |            0 rows |   2 cols | EMPTY 
+  [DimHazardType                           ] |            0 rows |   2 cols | EMPTY 
+  [DimInjurySeverity                       ] |            0 rows |   2 cols | EMPTY 
+  [DimPrelimRisk                           ] |            0 rows |   2 cols | EMPTY 
+  [DimSafetyBucket                         ] |            0 rows |   2 cols | EMPTY 
+  [LabRrpCombined                          ] |            0 rows |   9 cols | EMPTY 
+  [RRPSafety                               ] |            0 rows |  26 cols | EMPTY 
+  [SafetyLabIncidents                      ] |            0 rows |  42 cols | EMPTY 
+
+
+3. SCHEMA PURPOSE ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+Schema Purposes:
+
+[AIR                 ] - Automated Incident Response - automated handling and response to incidents
+[CICD                ] - Continuous Integration/Continuous Deployment - DevOps pipeline data
+[Common              ] - Shared reference data - tenants, capacities, dimensions that other schemas reference
+[DT                  ] - Data/Digital Twin - device or system modeling data
+[FC                  ] - Flight Control or Fabric Control - operational control systems
+[FW                  ] - Firmware/Framework - firmware versions, updates, device management
+[ICM                 ] - Incident Management - tracking incidents, tickets, and support cases
+[OOS                 ] - Out Of Service - capacity/service availability tracking
+[SafetyIncidents     ] - Safety-related incident tracking and management
+
+
+4. KEY RELATIONSHIP PATTERNS
+----------------------------------------------------------------------------------------------------
+
+Looking for common ID columns that suggest relationships...
+
+>> Tables with TenantId (likely relate to Common.Tenants):
+   ICM.DimICMSMETeam
+   ICM.DimICMTenant
+   ICM.IncidentHistory
+   ICM.IncidentSnapshot
+   ICM.IncidentSnapshotHistory
+   ICM.IncidentTrend
+
+>> Tables with Date/Time tracking (for temporal analysis):
+
+   AIR:
+      CADCurrent.AIREventDate
+      CADDataForCustomers.AIREventDate
+      CADHistory.AIREventDate
+      VMACurrent.AIREventDate
+      VMADataForCustomers.AIREventDate
+
+   Common:
+      DimCluster.ClusterCapacityTimeStamp
+      DimDate.Date
+      DimFaultCode.ProcessDate
+      DimNodeInventoryCurrent.PreciseTimeStamp
+      DimNodeInventoryHistory.PreciseTimeStamp
+
+   DT:
+      DecomTrend.LastOptimalDockDate
+      DigitalTwinCurrent.LastOptimalDockDate
+      DigitalTwinSummary.LastOptimalDockDate
+
+   FC:
+      FaultCodeCurrent.PreciseTimeStamp
+      FaultCodeEfficacy.ProcessDate
+      FaultCodeEfficacyHistory.ProcessDate
+      FaultCodeEpicHierarchy.EpicCreatedDate
+      FaultCodePrecision.InitalProductionKickTime
+
+   FW:
+      AllVulnerabilitiesTracker.DeploymentStartDate
+      ControlPlaneFreshnessCurrent.ProcessDate
+      ControlPlaneFreshnessSummary.ProcessDate
+      DataPlaneFreshnessCurrent.ProcessDate
+      DataPlaneFreshnessSummary.ProcessDate
+
+   ICM:
+      DimICMSCHIELT.ProcessDate
+      DimICMSCHIEOrg.ProcessDate
+      DimICMSME.ProcessDate
+      DimICMSMETeam.ProcessDate
+      DimICMTenant.LastRefreshedDateTime
+
+   OOS:
+      OOSCurrent.PreciseTimeStamp
+      OOSSummary.PreciseTimeStamp
+      XPFTenantsOfflineCapacity.ProcessDate
+
+   SafetyIncidents:
+      LabRrpCombined.ReportedDate
+      RRPSafety.CreatedDate
+      SafetyLabIncidents.FinalSSCRAssessmentDate
+
+
+====================================================================================================
+ANALYSIS COMPLETE
+====================================================================================================
