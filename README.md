@@ -99,7 +99,7 @@ See [QUICKSTART_GUIDE.md](QUICKSTART_GUIDE.md) for detailed setup instructions a
 
 - **`sql_get_table_schema`** - Get detailed schema information for a specific table in the lakehouse
 
-## ⚙️ Configuration
+## Configuration
 
 #### Eventhouse (Kusto) - 12 Tools:
 
@@ -133,7 +133,7 @@ See [QUICKSTART_GUIDE.md](QUICKSTART_GUIDE.md) for detailed setup instructions a
 
 - **`list_eventstreams`** - List all Eventstreams in your Fabric workspace
 
-## 🔑 Authentication- **`get_eventstream`** - Get detailed information about a specific Eventstream
+## Authentication- **`get_eventstream`** - Get detailed information about a specific Eventstream
 
 - **`get_eventstream_definition`** - Retrieve complete JSON definition of an Eventstream
 
@@ -147,9 +147,9 @@ Uses Azure Identity [`DefaultAzureCredential`](https://learn.microsoft.com/en-us
 
 ```bash1. Install either the stable or Insiders release of VS Code:
 
-# Windows   * [💫 Stable release](https://code.visualstudio.com/download)
+# Windows   * [ Stable release](https://code.visualstudio.com/download)
 
-winget install Microsoft.AzureCLI   * [🔮 Insiders release](https://code.visualstudio.com/insiders)
+winget install Microsoft.AzureCLI   * [ Insiders release](https://code.visualstudio.com/insiders)
 
 2. Install the [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) and [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) extensions
 
@@ -169,7 +169,7 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bashor, check here for [other 
 
 az login
 
-```## 📦 Installation
+```## Installation
 
 
 
@@ -177,7 +177,7 @@ The MCP server will automatically use your cached Azure CLI credentials.### 🔧
 
 
 
-## 🛠️ DevelopmentIf you want to use the latest version or contribute to development, you can install directly from the GitHub repository:
+## DevelopmentIf you want to use the latest version or contribute to development, you can install directly from the GitHub repository:
 
 
 
@@ -245,7 +245,7 @@ pip install -e ".[dev]"   - VS Code with GitHub Copilot extensions
 
    ```json
 
-## 🛡️ Security   {
+##  Security   {
 
        "mcp": {
 
@@ -253,7 +253,7 @@ Your credentials are handled securely through the official [Azure Identity SDK](
 
                "fabric-rti-mcp": {
 
-## 👥 Contributing                   "command": "uv",
+## Contributing                   "command": "uv",
 
                    "args": [
 
@@ -261,7 +261,7 @@ This project welcomes contributions and suggestions. Most contributions require 
 
                        "C:/Users/YourUsername/fabric-rti-mcp/",
 
-## 🤝 Code of Conduct                       "run",
+## Code of Conduct                       "run",
 
                        "-m",
 
@@ -269,7 +269,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
                    ],
 
-## ™️ Trademarks                   "env": {
+## Trademarks                   "env": {
 
                        "FABRIC_SQL_ENDPOINT": "your-workspace-name.datawarehouse.fabric.microsoft.com",
 
@@ -300,7 +300,7 @@ This project may contain trademarks or logos for projects, products, or services
 
 ---
 
-### 🔧 Alternative: Install from PyPI (Pip)
+### Alternative: Install from PyPI (Pip)
 The Fabric RTI MCP Server is also available on [PyPI](https://pypi.org/project/microsoft-fabric-rti-mcp/):
 
 #### From VS Code
@@ -311,7 +311,7 @@ The Fabric RTI MCP Server is also available on [PyPI](https://pypi.org/project/m
 
 The process will add these settings to your `settings.json`:
 
-## 🐛 Debugging the MCP Server locally
+## Debugging the MCP Server locally
 Assuming you have python installed and the repo cloned:
 
 ### Install locally
@@ -321,7 +321,7 @@ pip install -e ".[dev]"
 
 ### Configure
 
-Follow the [Manual Install](#🔧-manual-install-install-from-source) instructions.
+Follow the [Manual Install](#-manual-install-install-from-source) instructions.
 
 ### Attach the debugger
 Use the `Python: Attach` configuration in your `launch.json` to attach to the running server. 
@@ -333,7 +333,7 @@ Once VS Code picks up the server and starts it, navigate to its output:
 5. The debugger will attach to the server process, and you can start debugging
 
 
-## 🧪 Test the MCP Server
+## Test the MCP Server
 
 1. Open GitHub Copilot in VS Code and [switch to Agent mode](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
 2. You should see the Fabric RTI MCP Server in the list of tools
@@ -341,7 +341,7 @@ Once VS Code picks up the server and starts it, navigate to its output:
 4. The agent should be able to use the Fabric RTI MCP Server tools to complete your query
 
 
-## ⚙️ Configuration
+## Configuration
 
 The MCP server can be configured using the following environment variables:
 
@@ -384,7 +384,7 @@ The `kusto_get_shots` tool retrieves shots that are most similar to your prompt 
 - **Shots table**: Should have an "EmbeddingText" (string) column containing the natural language prompt, "AugmentedText" (string) column containing the respective KQL, and "EmbeddingVector" (dynamic) column containing the embedding vector of the EmbeddingText.
 - **Azure OpenAI embedding endpoint**: Used to create embedding vectors for your prompt. Note that this endpoint must use the same model that was used for creating the "EmbeddingVector" column in the shots table.
 
-## 🔑 Authentication
+## Authentication
 
 The MCP Server uses Azure Identity via [`DefaultAzureCredential`](https://learn.microsoft.com/en-us/azure/developer/python/sdk/authentication/credential-chains?tabs=dac) for secure, seamless authentication with **automatic token caching** to avoid repeated authentication prompts.
 
@@ -398,7 +398,7 @@ The MCP Server uses Azure Identity via [`DefaultAzureCredential`](https://learn.
 6. **Azure Developer CLI** (`AzureDeveloperCliCredential`) - Uses your azd login
 7. **Interactive Browser** (`InteractiveBrowserCredential`) - Falls back to browser-based login if needed
 
-### 🎯 Recommended Setup: Azure CLI (No repeated authentication prompts!)
+### Recommended Setup: Azure CLI (No repeated authentication prompts!)
 
 The **Azure CLI method provides the best user experience** with automatic token caching:
 
@@ -486,14 +486,14 @@ Additionally, the Entra app must be granted Azure Data Explorer API permissions 
 ### Remote Deployment 
 The MCP server can be deployed using the method of your choice. For example, you can follow the guide at https://github.com/Azure-Samples/mcp-sdk-functions-hosting-python/blob/main/ExistingServer.md to deploy the MCP server to an Azure Function App.
 
-## 🛡️ Security Note
+## Security Note
 
 Your credentials are always handled securely through the official [Azure Identity SDK](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/README.md) - **we never store or manage tokens directly**.
 
 MCP as a phenomenon is very novel and cutting-edge. As with all new technology standards, consider doing a security review to ensure any systems that integrate with MCP servers follow all regulations and standards your system is expected to adhere to. This includes not only the Azure MCP Server, but any MCP client/agent that you choose to implement down to the model provider.
 
 
-## 👥 Contributing
+## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
@@ -503,7 +503,7 @@ When you submit a pull request, a CLA bot will automatically determine whether y
 a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
 provided by the bot. You will only need to do this once across all repos using our CLA.
 
-## 🤝 Code of Conduct
+## Code of Conduct
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
